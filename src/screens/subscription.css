@@ -1,0 +1,181 @@
+/* .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  } */
+
+  .mealdetails{
+    color: aliceblue;
+  }
+  
+.mealmenu{
+  color: white;
+}
+
+  .subscription-image-container {
+    margin-right: 20px;
+  }
+  
+  .subscription-image {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .no-image {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: gray;
+  }
+  
+  .meal-details {
+    flex-grow: 1;
+  }
+  
+  .meal-type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .meal-name,
+  .meal-price {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .subscription-image {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+
+
+  
+  .meal-label {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .meal-label.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .meal-label:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* =========================================================== */
+
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .subscriptions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subscription {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .subscription-name {
+    font-weight: bold;
+  }
+
+  .subscription-price {
+    float: right;
+  }
+
+  .subscription-description {
+    margin-top: 10px;
+  }
+
+  .form {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }

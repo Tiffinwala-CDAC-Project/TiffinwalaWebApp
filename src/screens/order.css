@@ -1,0 +1,40 @@
+/* Add this CSS to your stylesheet or use a separate CSS file */
+.my-orders-container,
+.my-orders-container th,
+.my-orders-container td {
+  color: white !important; /* Set text color for MyOrders component */
+}
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white; /* Set text color for table content */
+}
+
+.order-table th,
+.order-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: white; /* Set text color for table content */
+}
+
+.order-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Add transparency for readability */
+.order-table {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+/* Darker background for table header */
+.order-table th {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Alternate row background color */
+.order-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}

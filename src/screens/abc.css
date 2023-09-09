@@ -1,0 +1,73 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .subscriptions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subscription {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .subscription-name {
+    font-weight: bold;
+  }
+
+  .subscription-price {
+    float: right;
+  }
+
+  .subscription-description {
+    margin-top: 10px;
+  }
+
+  .form {
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }

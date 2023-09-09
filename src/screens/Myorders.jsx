@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './order.css';
+import { URL } from '../Constant';
 
 // import Navbar from "../components/Navbar";
 
@@ -24,7 +25,7 @@ const MyOrders = () => {
     }
 
     // Make the API request using Axios
-    axios.get(`http://localhost:4000/orders/details/${userId}`)
+    axios.get(`${URL}orders/details/${userId}`)
       .then((response) => {
         const ordersData = response.data.data;
         setOrders(ordersData);

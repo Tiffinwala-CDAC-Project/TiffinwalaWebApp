@@ -5,13 +5,14 @@ import Card from "../components/Card";
 import { useHistory } from "react-router-dom";
 import Footer from '../components/Footer';
 import './home.css'
+import { URL } from '../Constant';
 
 export default function Home() {
   const [meals, setMeals] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
-    fetch("http://localhost:4000/mealist/meals/all")
+    fetch(`${URL}mealist/meals/all`)
       .then(response => response.json())
       .then(data => setMeals(data))
       .catch(error => console.error("Error fetching meals:", error));

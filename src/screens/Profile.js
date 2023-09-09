@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const loggedInUserId = sessionStorage.getItem('loggedInUserId');
+import { URL } from '../Constant';
 
 
 
@@ -29,7 +30,7 @@ function Profile() {
                 setUsers(result.data); // Set the array of users from the server
             }
         }
-        helper.open("GET", `http://localhost:4000/users/${loggedInUserId}`);
+        helper.open("GET", `${URL}users/${loggedInUserId}`);
         helper.send();
     }
 
@@ -54,7 +55,7 @@ function Profile() {
                 console.log("Update successful");
             }
         }
-        helper.open("POST", "http://localhost:4000/Users/update/");
+        helper.open("POST", `${URL}Users/update/`);
         helper.setRequestHeader("Content-Type", "application/json");
         helper.send(JSON.stringify(updatedUser));
     };

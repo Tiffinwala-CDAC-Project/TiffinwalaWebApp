@@ -6,6 +6,7 @@ import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { URL } from '../Constant';
 
 export default function Subscription(props) {
   const { state } = props.location;
@@ -25,7 +26,7 @@ export default function Subscription(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/subscriptions/check/${userId}`)
+      .get(`${URL}subscriptions/check/${userId}`)
       .then((response) => {
         setIsSubscribed(response.data.subscribed);
       })
@@ -37,7 +38,7 @@ export default function Subscription(props) {
   useEffect(() => {
     // Fetch the remaining days count for the user's subscription
     axios
-      .get(`http://localhost:4000/subscriptions/${userId}`)
+      .get(`${URL}subscriptions/${userId}`)
       .then((response) => {
         setDaysRemaining(response.data.days_remaining);
       })
@@ -119,7 +120,7 @@ export default function Subscription(props) {
 
       // Step 1: Insert data into the 'subscriptions' table
       axios
-        .post(`http://localhost:4000/subscriptions/${userId}`, newSubscriptionData)
+        .post(`${URL}subscriptions/${userId}`, newSubscriptionData)
         .then((subscriptionResponse) => {
           console.log('Subscription created successfully:', subscriptionResponse.data);
 
@@ -135,7 +136,7 @@ export default function Subscription(props) {
           };
 
           axios
-            .post('http://localhost:4000/orders/insert_order', orderData)
+            .post(`${URL}orders/insert_order`, orderData)
             .then((orderResponse) => {
               alert("Order Confirmed")
               console.log('Order created successfully:', orderResponse.data);

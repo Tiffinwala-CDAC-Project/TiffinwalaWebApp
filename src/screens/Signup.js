@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { URL } from '../Constant';
+
 
 export default function Signup() {
   const [credentials, setCredentials] = useState({
@@ -48,7 +50,7 @@ export default function Signup() {
     setErrors({});
 
     // Proceed with form submission
-    const response = await fetch("http://localhost:4000/users/register", {
+    const response = await fetch(`${URL}users/register`, {
       method: "POST",
       headers: {
         'Content-Type': 'Application/json'
